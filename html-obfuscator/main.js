@@ -6,7 +6,7 @@
         let encrypted = o.obfuscate(fs.readFileSync(path.join(file), 'utf8'));
         let html = "<script language=\"javascript\">";
         html += "document.write(unescape('" + encrypted + "'))";
-        html += " // https://www.npmjs.com/org/html-obfuscator ";
+        html += " // ZESKENCRYPT ";
         html += "</script\>";
         return html
     }
